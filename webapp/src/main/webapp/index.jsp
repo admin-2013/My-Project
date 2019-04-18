@@ -31,22 +31,7 @@
 <td>Email:</td>
   <td>  <input type="text" placeholder="Enter Email" name="email" required></td>
   </tr>
-	
-	<tr>
-  <td><label for="country">Country</label></td>
-     <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-	
-	
-	</tr>
-	
-	
-	
-	
-	
+		
 <td ><input type="Reset"></td>
 <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
 </tr>
