@@ -19,8 +19,17 @@
 <td>Password:</td>
 <td><input type="Password" size=25 name="pwd"></td>
 </tr>
+<label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+<label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+ <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
 
-<tr>
 <td ><input type="Reset"></td>
 <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
 </tr>
