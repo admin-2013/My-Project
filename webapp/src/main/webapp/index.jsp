@@ -29,7 +29,6 @@
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
-
 <td ><input type="Reset"></td>
 <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
 </tr>
