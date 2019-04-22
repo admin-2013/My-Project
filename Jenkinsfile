@@ -24,10 +24,18 @@ node ('master'){
 
      stage('Deployment')
            {
-sh label: '', script: 'scp /var/lib/jenkins/workspace/Scripted-Pipeline/webapp/target/webapp.war ubuntu@172.31.15.125:/var/lib/tomcat8/webapps/king.war'
+sh label: '', script: 'scp /var/lib/jenkins/workspace/Scripted-Pipeline/webapp/target/webapp.war ubuntu@172.31.15.125:/var/lib/tomcat8/webapps/queen.war'
         }           
 
 
+  stage('Productiont')
+  
+           {
+           
+              input id: 'NHBN9', message: 'Waiting for the proceed', ok: 'submit', submitter: 'venkat'
+           
+sh label: '', script: 'scp /var/lib/jenkins/workspace/Scripted-Pipeline/webapp/target/webapp.war ubuntu@172.31.18.214:/var/lib/tomcat8/webapps/king.war'
+        }           
 
 
 
