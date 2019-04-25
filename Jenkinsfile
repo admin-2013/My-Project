@@ -31,7 +31,10 @@ sh label: '', script: 'scp /var/lib/jenkins/workspace/Scripted-Pipeline/webapp/t
            {
 sh label: '', script: 'scp /var/lib/jenkins/workspace/Scripted-Pipeline/webapp/target/webapp.war ubuntu@172.31.18.214:/var/lib/tomcat8/webapps/queen.war'
         }     
-
+stage('Test')
+           {
+               echo 'Deploy test case'
+        }     
 
 
 }
